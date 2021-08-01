@@ -76,7 +76,7 @@ void Tokenizer::SaveArg(const char *data, size_t len) {
   auto mem = static_cast<char *>(malloc(size * sizeof(char)));
   if (mem != nullptr) {
     memcpy(mem, data, len * sizeof(char));
-    mem[len] = L'\0';
+    mem[len] = '\0';
     saver_.push_back(mem);
   }
 }
